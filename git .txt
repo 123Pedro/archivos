@@ -1,0 +1,30 @@
+--Proceso 
+1. git config
+2. git config --global user.name="123Pedro"
+3. git config --global user.email="pedro.curi"
+4. git init
+5. git status
+6. git add .
+7. git commit -m "mensaje corta"
+8. git remote add origin https://github.com/123Pedro/practica2.git
+9. git push origin master
+
+
+------------gitignore
+--poner 
+.idea
+*.pyc
+db.sqlite3
+
+----a investigar
+0.git branch --set-upstream master origin/master
+1:git rm --cached .idea        ->para que sirve
+2:git rm -r --cached .idea/*   ->//
+3. git pull/push origin master
+4. git remote show
+5. git remote show origin
+6. git pull origin
+7. git fetch
+8. git fetch -a
+9. git pull origin master --allow-unrelated
+10. 

@@ -1,0 +1,251 @@
+﻿----------talves sale error 
+Microsoft Windows [Versión 10.0.14393]
+(c) 2016 Microsoft Corporation. Todos los derechos reservados.
+
+C:\Users\Administrador\Downloads\website>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   .idea/workspace.xml
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\Administrador\Downloads\website>git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   .gitignore
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   .gitignore
+        modified:   .idea/workspace.xml
+
+
+C:\Users\Administrador\Downloads\website>git rm --cached .idea
+fatal: not removing '.idea' recursively without -r
+
+C:\Users\Administrador\Downloads\website>git rm -r --cached .idea/*
+rm '.idea/dataSources.local.xml'
+rm '.idea/dataSources.xml'
+rm '.idea/misc.xml'
+rm '.idea/modules.xml'
+rm '.idea/vcs.xml'
+rm '.idea/website.iml'
+rm '.idea/workspace.xml'
+
+C:\Users\Administrador\Downloads\website>git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   .gitignore
+        deleted:    .idea/dataSources.local.xml
+        deleted:    .idea/dataSources.xml
+        deleted:    .idea/misc.xml
+        deleted:    .idea/modules.xml
+        deleted:    .idea/vcs.xml
+        deleted:    .idea/website.iml
+        deleted:    .idea/workspace.xml
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   .gitignore
+
+
+C:\Users\Administrador\Downloads\website>git add .
+
+C:\Users\Administrador\Downloads\website>git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   .gitignore
+        deleted:    .idea/dataSources.local.xml
+        deleted:    .idea/dataSources.xml
+        deleted:    .idea/misc.xml
+        deleted:    .idea/modules.xml
+        deleted:    .idea/vcs.xml
+        deleted:    .idea/website.iml
+        deleted:    .idea/workspace.xml
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   .gitignore
+
+
+C:\Users\Administrador\Downloads\website>git add .
+
+C:\Users\Administrador\Downloads\website>git commit -m "Prueba"
+[master b375db9] Prueba
+ 8 files changed, 3 insertions(+), 715 deletions(-)
+ create mode 100644 .gitignore
+ delete mode 100644 .idea/dataSources.local.xml
+ delete mode 100644 .idea/dataSources.xml
+ delete mode 100644 .idea/misc.xml
+ delete mode 100644 .idea/modules.xml
+ delete mode 100644 .idea/vcs.xml
+ delete mode 100644 .idea/website.iml
+ delete mode 100644 .idea/workspace.xml
+
+C:\Users\Administrador\Downloads\website>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\Administrador\Downloads\website>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\Administrador\Downloads\website>git pull origin master
+From https://github.com/123Pedro/proyect-Music
+ * branch            master     -> FETCH_HEAD
+fatal: refusing to merge unrelated histories
+
+C:\Users\Administrador\Downloads\website>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\Administrador\Downloads\website>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\Administrador\Downloads\website>git remote shot
+error: Unknown subcommand: shot
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [
+--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>
+)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+
+C:\Users\Administrador\Downloads\website>git remote show
+origin
+
+C:\Users\Administrador\Downloads\website>git remote show origin
+* remote origin
+  Fetch URL: https://github.com/123Pedro/proyect-Music.git
+  Push  URL: https://github.com/123Pedro/proyect-Music.git
+  HEAD branch: master
+  Remote branch:
+    master tracked
+  Local ref configured for 'git push':
+    master pushes to master (local out of date)
+
+C:\Users\Administrador\Downloads\website>git pull origin
+You asked to pull from the remote 'origin', but did not specify
+a branch. Because this is not the default configured remote
+for your current branch, you must specify a branch on the command line.
+
+C:\Users\Administrador\Downloads\website>git pull origin master
+From https://github.com/123Pedro/proyect-Music
+ * branch            master     -> FETCH_HEAD
+fatal: refusing to merge unrelated histories
+
+C:\Users\Administrador\Downloads\website>git history
+git: 'history' is not a git command. See 'git --help'.
+
+C:\Users\Administrador\Downloads\website>git log
+commit b375db91c243e99f2d76a21a5a19e95cd7c4d1ee
+Author: 123Pedro <pedro.curi20@gmail.com>
+Date:   Tue May 16 10:52:23 2017 -0500
+
+    Prueba
+
+commit 246f8bc53bea0404f41971d0908f7d7d643a00af
+Author: 123Pedro <pedro.curi20@gmail.com>
+Date:   Tue May 16 10:41:41 2017 -0500
+
+    Prueba uno
+
+C:\Users\Administrador\Downloads\website>git fetch
+
+C:\Users\Administrador\Downloads\website>git fetch -a
+
+C:\Users\Administrador\Downloads\website>git pull origin master
+From https://github.com/123Pedro/proyect-Music
+ * branch            master     -> FETCH_HEAD
+fatal: refusing to merge unrelated histories
+
+C:\Users\Administrador\Downloads\website>git push origin master
+To https://github.com/123Pedro/proyect-Music.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/123Pedro/proyect-Music.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+C:\Users\Administrador\Downloads\website>git branch --set-upstream master origin/master
+The --set-upstream flag is deprecated and will be removed. Consider using --track or --set-upstream-to
+Branch master set up to track remote branch master from origin.
+
+C:\Users\Administrador\Downloads\website>git branch --set-upstream-to master origin/master
+fatal: branch 'origin/master' does not exist
+
+C:\Users\Administrador\Downloads\website>git branch --set-upstream-to master origin/master
+fatal: branch 'origin/master' does not exist
+
+C:\Users\Administrador\Downloads\website>git fetch
+
+C:\Users\Administrador\Downloads\website>
+C:\Users\Administrador\Downloads\website>git pull origin master --allow-unrelated
+-histories
+From https://github.com/123Pedro/proyect-Music
+ * branch            master     -> FETCH_HEAD
+Auto-merging .gitignore
+CONFLICT (add/add): Merge conflict in .gitignore
+Automatic merge failed; fix conflicts and then commit the result.
+
+C:\Users\Administrador\Downloads\website>git status
+On branch master
+Your branch and 'origin/master' have diverged,
+and have 2 and 1 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+
+        both added:      .gitignore
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\Administrador\Downloads\website>git add .
+
+C:\Users\Administrador\Downloads\website>git commit -m "fix merge"
+[master 61e09fa] fix merge
+
+C:\Users\Administrador\Downloads\website>git push origin master
+Counting objects: 49, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (45/45), done.
+Writing objects: 100% (49/49), 13.22 KiB | 0 bytes/s, done.
+Total 49 (delta 8), reused 0 (delta 0)
+remote: Resolving deltas: 100% (8/8), completed with 1 local object.
+To https://github.com/123Pedro/proyect-Music.git
+   36ca6b8..61e09fa  master -> master
+
+C:\Users\Administrador\Downloads\website>
